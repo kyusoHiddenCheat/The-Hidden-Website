@@ -23,18 +23,10 @@
             position: relative;
         }
 
-        .status-container {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-        }
-
-        .device-count {
-            color: #9932cc;
+        .page-detect {
+            color: #00ff00;
             font-size: 14px;
-            margin-top: 5px;
+            position: center;
         }
 
         .page-title {
@@ -77,7 +69,6 @@
             border-radius: 8px;
             width: 260px;
             text-align: center;
-            cursor: pointer;
         }
 
         .my-button:hover {
@@ -91,9 +82,7 @@
     </style>
 </head>
 <body>
-    <div class="status-container">
-        <div class="device-count">Devices Online: <span id="count">0</span></div>
-    </div>
+    <div class="page-detect">online</div>
     
     <h1 class="page-title">THE HIDDEN CHEAT</h1>
     
@@ -108,29 +97,14 @@
         <button class="my-button" onclick="window.location.href='https://t.me/exclsv_apat'">
             Download Injector Cheat
         </button>
-        <button class="my-button" onclick="window.location.href='https://t.me/exclsv_apat'">
+       <button class="my-button" onclick="window.location.href='https://t.me/exclsv_apat'">
             REPORT TO OWNER
-        </button>
+       </button>
     </div>
-
-    <script>
-        const namespace = "The-Hidden-Website";
-        const key = "online-devices";
-
-        fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
-            .then(response => response.json())
-            .then(data => {
- 
-                fetch(`https://api.countapi.xyz/get/${namespace}/${key}`)
-                    .then(res => res.json())
-                    .then(info => {
-                        document.getElementById("count").textContent = info.value;
-                    });
-            })
-            .catch(error => console.log("Error loading count:", error));
-    </script>
 </body>
-</html> .catch(error => console.log("Error loading count:", error));
-    </script>
+</html> TO OWNER
+       </button>
+    </div>
 </body>
+</html></body>
 </html>
