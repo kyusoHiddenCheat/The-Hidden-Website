@@ -92,7 +92,6 @@
 </head>
 <body>
     <div class="status-container">
-        <div class="page-detect">online</div>
         <div class="device-count">Devices Online: <span id="count">0</span></div>
     </div>
     
